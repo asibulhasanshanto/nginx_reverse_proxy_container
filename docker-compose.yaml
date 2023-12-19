@@ -10,4 +10,8 @@ services:
       - 443:443
     volumes:
       - ./conf:/etc/nginx/conf.d/
+      - ./html/index.html:/var/www/html
       - /etc/letsencrypt:/etc/letsencrypt
+networks:
+  default:
+    name: nginx_reverse_proxy_container
