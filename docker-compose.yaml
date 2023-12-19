@@ -10,7 +10,7 @@ services:
       - 443:443
     volumes:
       - ./conf:/etc/nginx/conf.d/
-      - ./html/index.html:/var/www/html
+      - ./html/index.html:/var/www/html/index.html
       - /etc/letsencrypt:/etc/letsencrypt
 networks:
   default:
